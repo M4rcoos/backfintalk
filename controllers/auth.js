@@ -37,7 +37,7 @@ const login = async (req,res)=>{
        return
    }
    try {
-       const secret = process.env.SECRET
+       const secret = "SK125AXMZK"
        const token = jtw.sign({
            id: user._id,
            name: user.name

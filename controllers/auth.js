@@ -44,7 +44,7 @@ const login = async (req,res)=>{
        },
         secret,
        )
-       res.status(200).json({ msg: "Sucess", user: user.name, token })
+       res.status(200).json({ msg: "Sucess", id:user._id,user: user.name, token })
    
    } catch (error) {
        res.status(500).json({msg:`Erro no servidor:${error}`})
